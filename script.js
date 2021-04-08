@@ -2,7 +2,7 @@ const imageContainer = document.getElementById("image-container");
 const loader = document.getElementById('loader');
 
 // Unsplash API
-const countParam = 30;
+const countParam = 5;   // performance
 const apiKey = 'rNMWdcRvTtipyllTAVI42q7-5CSL0NxQuKUskFEMmzs';
 const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${countParam}`;
 
@@ -17,6 +17,7 @@ function imageLoaded() {
     if (imagesLoaded === totalImagesToLoad) {
         loader.hidden = true;       // Will be false only on initial load, coz of infinite scroll
         readyToLoadNewImages = true;
+        countParam = 30;
     }
 }
 
