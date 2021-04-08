@@ -3,7 +3,7 @@ const loader = document.getElementById('loader');
 
 // Unsplash API
 const countParam = 30;
-const apiKey = UNSPLASH_API_ACCESS_KEY;     // from env.js
+const apiKey = 'rNMWdcRvTtipyllTAVI42q7-5CSL0NxQuKUskFEMmzs';
 const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${countParam}`;
 
 let readyToLoadNewImages = false;
